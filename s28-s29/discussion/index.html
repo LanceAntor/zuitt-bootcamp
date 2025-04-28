@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript - Reactive DOM with Fetch</title>
+</head>
+<body>
+    <h1>All Post</h1>
+    <!--We will add the post items as html elements in this div-->
+    <button type="submit" id="btn-delete-all">Delete All</button>
+    <div id="div-post-entries"></div>
+
+
+    <hr>
+    <h1>View A Post</h1>
+    <form id="form-view-post">
+        <span>Post ID</span><br>
+        <input type="text" id="txt-post-id"><br>
+        <button type="submit" id="btn-view-post" disabled>View</button>
+    </form>
+    
+    <div id ="div-view-result"></div>
+    <hr>
+    <h1>Add Post</h1>
+    <form id="form-add-post">
+        <span>Title</span><br>
+        <input type="text" id="txt-title"><br>
+        <span>Body</span><br>
+        <textarea type="text-body" id="txt-body"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <!-- Edit a post-->
+    <hr>
+    <h1>Edit Post</h1>
+    <form id="form-edit-post">
+        <input type="number" id="txt-edit-id" hidden/><br>
+        <span>Title</span><br>
+        <input type="text" id="txt-edit-title"><br>
+        <span>Body</span><br>
+        <textarea type="text" id="txt-edit-body"></textarea><br>
+        <button type="submit" id="btn-submit-update" disabled>Update</button>
+    </form>
+
+    <div id ="div-submit-result"></div>
+    
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='login_page.css'>
+    <script src='login_page.js'></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="title-header">
+            <h1><a href="../index.html">ATR Movie Library</a></h1>
+        </div>
+        <ul>
+            <li><a href="../movies_page/movies_page.html">Movies</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="../registration_page/registration_page.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <small class="error-message" id="email-error">Please enter a valid email (must include '@').</small>
+            </div>
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <small class="error-message" id="password-error">Password is required.</small>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="login_page.js"></script>
+</body>
+</html>
